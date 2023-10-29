@@ -1,0 +1,357 @@
+	<!-- header-begin -->
+<!doctype html>
+<html>
+
+<head>
+	<title>Prolog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+	<link href="assets/css/dashboard.css" rel="stylesheet" type="text/css" />
+	<style>
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      /* Style the active class, and buttons on mouse-over */
+      .active, .btn:hover {
+        background-color: #666;
+        color: white !important;
+      }
+    </style>
+
+</head>
+
+<body>
+	<main class="app-container">
+		<header>
+			<div class="row">
+				<div class="col-lg-2 col-md-3 ">
+					<div class="head_logo d-flex">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="">
+						</a>
+						<div id="main">
+							<button class="openbtn" onclick="openNav()">☰</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-9 ct-d-none">
+					<div class="users_detail">
+						<h4>Who viewed<br> your profile</h4>
+						<div class="user_profile_picture">
+							<span><img src="assets/images/user01.svg" alt=""></span>
+							<span><img src="assets/images/user02.svg" alt=""></span>
+							<span><img src="assets/images/user03.svg" alt=""></span>
+							<span><img src="assets/images/user04.svg" alt=""></span>
+						</div>
+						<div class="user_views_quantity">
+							<h6>14</h6>
+							<p>This Week</p>
+						</div>
+						<div class="user_views_quantity">
+							<h6>572</h6>
+							<p>This Month</p>
+						</div>
+						<div class="user_quick_links">
+							<select>
+								<option>Quick Links</option>
+								<option>Demo 2</option>
+								<option>Demo 3</option>
+								<option>Demo 4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="profile_settings">
+						<div class="member_ship_card">
+							<p>Membership Expires on:</p>
+							<span>Feb 25, 2024</span>
+						</div>
+						<div class="user_profile_details">
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/notifications.svg" alt=""></a>
+							</div>
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/beenhere.svg" alt=""></a>
+							</div>
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/settings.svg" alt=""></a>
+							</div>
+							<div class="user_profile_picture">
+								<a href="#"><img src="assets/images/user_profile_picture.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+
+
+
+
+		<!-- side_bar_begin -->
+		<div id="mySidebar" class="sidebar">
+			<div class="side_logo">
+				<a href="#">
+					<img src="assets/images/logo.png" alt="">
+				</a>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+			</div>
+			<div class="side_navs">
+				<a href="#" class="theme_btn Plus_btn ">Create RFQ</a>
+			</div>
+			<div class="side_link">
+				<a href="#">
+					<img src="assets/images/icons/roofing.svg" alt="">
+					<p>Home</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/dashboard.svg" alt="">
+					<p>Dashboard</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/person.svg" alt="">
+					<p>My Profile</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/search.svg" alt="">
+					<p>Find Forwarders</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/handshake.svg" alt="">
+					<p>Pro Resources</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/send.svg" alt="">
+					<p>RFQs Generated</p>
+				</a>
+				<a href="#">
+					<img style="width:10px;" src="assets/images/icons/attach_money.svg" alt="">
+					<p>PROPay</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/people.svg" alt="">
+					<p>Conference</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/local_activity.svg" alt="">
+					<p>Conference Bookings</p>
+				</a>
+			</div>
+			<div class="side_link">
+				<a href="#">
+					<img src="assets/images/icons/notifications.svg" alt="">
+					<p>Notifications</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/edit.svg" alt="">
+					<p>Edit Profile</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/beenhere.svg" alt="">
+					<p>Membership #125458</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/settings.svg" alt="">
+					<p>Settings</p>
+				</a>
+			</div>
+		</div>
+		<!-- side_bar_begin -->
+<!-- header-ends -->
+
+
+
+
+
+<section class="activite_sec">
+  <div class="actity_main_box">
+    <div class="activity_title_box">
+       <h4>Activities</h4>
+      <ul id="days_list">
+        <li><a  class="btn active" href="#ct_today"><i class='bx bx-check-circle' ></i>Today</a></li>
+        <li><a  class="btn" href="#ct_tomorrow"><i class='bx bx-check-circle' ></i>Tomorrow</a></li>
+        <li><a  class="btn" href="#ct_last_week"><i class='bx bx-check-circle' ></i>Last Week</a></li>
+        <li><a  class="btn" href="#ct_last_month"><i class='bx bx-check-circle' ></i>Last Month</a></li>
+      </ul>
+    </div>
+    <div class="customer_list_main">
+        <a href="#" id="ct_today" class="define_days" >Today</a>
+        <ul>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="customer_list_main">
+        <a href="#" id="ct_tomorrow" class="define_days" >Tomorrow</a>
+        <ul>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="customer_list_main">
+        <a href="#" id="ct_last_week" class="define_days" >Last Week</a>
+        <ul>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="customer_list_main">
+        <a href="#" id="ct_last_month" class="define_days" >Last Month</a>
+        <ul>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+          <li>
+            <div class="customer_detail">
+                <h4>Williamson LoggedIn in the system</h4>
+                <p>By June 10, 2023 at New York, USA</p>
+            </div>
+          </li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+</main>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/slick.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script> 
+<script type="text/javascript" src="assets/js/wow.js"></script> 
+<script type="text/javascript" src="assets/js/functions.js"></script> 
+
+<script>
+  // Function to open the modal when the page loads
+  $(document).ready(function() {
+    $('#autoOpenModalBtn').trigger('click');
+  });
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("days_list");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+
+
+// add smooth  scroll on anchor:
+document.querySelectorAll("a[href^='#']").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+</script> 
+<!-- footer begin -->
+<?php include 'includes/footer.php'; ?>
+<!-- footer end -->
+</body>
+</html>

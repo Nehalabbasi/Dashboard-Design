@@ -1,0 +1,507 @@
+	<!-- header-begin -->
+  <!doctype html>
+<html>
+
+<head>
+	<title>Prolog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/dashboard.css" rel="stylesheet" type="text/css" />
+  <style>
+  
+/* toggle_css_begin */
+
+.coins_redeeem_main hr {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  bottom: 0;
+  background-color: var(--primary-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: linear-gradient(90deg, #68dcff 0%, #004bce 100%);
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  opacity: 1;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.all-inquiries .inquiries-tab li:nth-child(2)::before {
+    content: "";
+    width: 1px;
+    position: absolute;
+    height: 27px;
+    background: white;
+    right: 0;
+    bottom: -1px;
+}
+/* toggle_css_end */
+
+
+/* The container */
+.pro_container {
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.pro_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 2px solid #97c0ff;
+}
+
+/* On mouse-over, add a grey background color */
+.pro_container:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.pro_container input:checked ~ .checkmark1 {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+/* Create the checkmark1/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark1 when checked */
+.pro_container input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark1/indicator */
+.pro_container .checkmark1:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.coins_redeeem_main {
+    padding: 0 10px;
+}
+
+section.redeem_pro_points .ct_pro_points_pg_sec {
+    margin: 0 auto;
+    width: 597px;
+}
+.ct_charts_points .pro_point_redeem_box p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ct_charts_points  .pro_point_coins_redeem_box_main {
+    padding: 15px 18px;
+}
+</style>
+</head>
+
+<body>
+	<main class="app-container">
+		<header>
+			<div class="row">
+				<div class="col-lg-2 col-md-3 ">
+					<div class="head_logo d-flex">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="">
+						</a>
+						<div id="main">
+							<button class="openbtn" onclick="openNav()">☰</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-9 ct-d-none">
+					<div class="users_detail">
+						<h4>Who viewed<br> your profile</h4>
+						<div class="user_profile_picture">
+							<span><img src="assets/images/user01.svg" alt=""></span>
+							<span><img src="assets/images/user02.svg" alt=""></span>
+							<span><img src="assets/images/user03.svg" alt=""></span>
+							<span><img src="assets/images/user04.svg" alt=""></span>
+						</div>
+						<div class="user_views_quantity">
+							<h6>14</h6>
+							<p>This Week</p>
+						</div>
+						<div class="user_views_quantity">
+							<h6>572</h6>
+							<p>This Month</p>
+						</div>
+						<div class="user_quick_links">
+							<select>
+								<option>Quick Links</option>
+								<option>Demo 2</option>
+								<option>Demo 3</option>
+								<option>Demo 4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="profile_settings">
+						<div class="member_ship_card">
+							<p>Membership Expires on:</p>
+							<span>Feb 25, 2024</span>
+						</div>
+						<div class="user_profile_details">
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/notifications.svg" alt=""></a>
+							</div>
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/beenhere.svg" alt=""></a>
+							</div>
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/settings.svg" alt=""></a>
+							</div>
+							<div class="user_profile_picture">
+								<a href="#"><img src="assets/images/user_profile_picture.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- side_bar_begin -->
+		<div id="mySidebar" class="sidebar">
+			<div class="side_logo">
+				<a href="#">
+					<img src="assets/images/logo.png" alt="">
+				</a>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+			</div>
+			<div class="side_navs">
+				<a href="#" class="theme_btn Plus_btn ">Create RFQ</a>
+			</div>
+			<div class="side_link">
+				<a href="#">
+					<img src="assets/images/icons/roofing.svg" alt="">
+					<p>Home</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/dashboard.svg" alt="">
+					<p>Dashboard</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/person.svg" alt="">
+					<p>My Profile</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/search.svg" alt="">
+					<p>Find Forwarders</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/handshake.svg" alt="">
+					<p>Pro Resources</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/send.svg" alt="">
+					<p>RFQs Generated</p>
+				</a>
+				<a href="#">
+					<img style="width:10px;" src="assets/images/icons/attach_money.svg" alt="">
+					<p>PROPay</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/people.svg" alt="">
+					<p>Conference</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/local_activity.svg" alt="">
+					<p>Conference Bookings</p>
+				</a>
+			</div>
+			<div class="side_link">
+				<a href="#">
+					<img src="assets/images/icons/notifications.svg" alt="">
+					<p>Notifications</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/edit.svg" alt="">
+					<p>Edit Profile</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/beenhere.svg" alt="">
+					<p>Membership #125458</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/settings.svg" alt="">
+					<p>Settings</p>
+				</a>
+			</div>
+		</div>
+		<!-- side_bar_begin -->
+<!-- header-ends -->
+
+
+
+<main class="inner_page">
+
+          <section class="redeem_pro_points ct_charts_points">
+            <div class="col-lg-5 col-12 all-inquiries ct_inquery_main ct_pro_points_pg_sec">
+              <div class="customer_inquery_main">
+                <div class="see-all-inquiries">
+                  <h3>Pro Power Points Chart</h3>
+                 </div>
+                   <a href="" class="theme_btn light_download_btn"><i class='bx bx-download'></i>Download </a>
+                </div>
+                 <hr style="color: #ffff;margin: 20px 0;width: 100%;">
+                   <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>New Member Enrolment (Reference)</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>1000</span>
+                          <h4>Referring company</h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>Addition of Branches</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>500</span>
+                          <h4></h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>Renewal</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>500</span>
+                          <h4>Head office</h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>Renewal</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>250</span>
+                          <h4>each branch renewed</h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>Use Prolog log on your Website</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>100</span>
+                          <h4></h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>Use Prolog logo on your signature</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>100</span>
+                          <h4></h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>Follow on Social Media</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>1000</span>
+                          <h4>for each LinkedIn, <br> Facebook, Instagram</h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>Download the Prolog Mobile App</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>150</span>
+                          <h4>Referring company</h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                    <div class="coins_redeeem_main">
+                      <div class="pro_point_coins_redeem_box_main">
+                        <div class="pro_point_redeem_box">
+                          <img src="assets/images/icons/coins.svg" alt="">
+                          <div>
+                            <p>New Member Enrolment (Reference)</p>
+                          </div>
+                        </div>
+                        <div class="mem_num_records">
+                          <span>1000</span>
+                          <h4>Referring company</h4>
+                        </div>
+                      </div>
+                      <hr class"divider">
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+  </main>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/slick.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script> 
+<script type="text/javascript" src="assets/js/wow.js"></script> 
+<script type="text/javascript" src="assets/js/functions.js"></script> 
+
+<script>
+  // Function to open the modal when the page loads
+  $(document).ready(function() {
+    $('#autoOpenModalBtn').trigger('click');
+  });
+</script>
+  <script>
+    function toggleLabel(id) {
+      var labelTextContent = document.getElementById(id);
+
+      if (labelTextContent.textContent.trim() === "Waiting") {
+        labelTextContent.textContent = "Checked-In";
+        labelTextContent.classList.add("checked-label");
+      } else {
+        labelTextContent.textContent = "Waiting";
+        labelTextContent.classList.remove("checked-label");
+      }
+    }
+
+  </script>
+</body>
+</html>

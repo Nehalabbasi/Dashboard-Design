@@ -1,0 +1,889 @@
+	<!-- header-begin -->
+	<!doctype html>
+<html>
+<head>
+<title>Prolog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+<link href="assets/css/dashboard.css" rel="stylesheet" type="text/css" />
+
+<style>
+  header.admin_head .head_logo.d-flex span {
+    position: absolute;
+    right: 0;
+    top: -6px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.head_logo a {
+    position: relative;
+}
+</style>
+
+</head>
+<body>
+
+
+<main class="app-container">
+
+  <!-- Mobile Navigation Button End-->
+  <header class="admin_head" >
+    <div class="row">
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="head_logo d-flex">
+          <a href="#">
+            <span>ADMIN</span>
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-6">
+        <div class="users_detail">
+          <div class="user_quick_links">
+            <select>
+              <option>Quick Links</option>
+              <option>Demo 2</option>
+              <option>Demo 3</option>
+              <option>Demo 4</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="profile_settings">
+          <div class="member_ship_card">
+            <p>Membership Expires on:</p>
+            <span>Feb 25, 2024</span>
+          </div>
+          <div class="user_profile_details">
+            <div class="user_notifications">
+              <a href="#"><img src="assets/images/icons/notifications.svg" alt=""></a>
+            </div>
+            <div class="user_notifications">
+              <a href="#"><img src="assets/images/icons/beenhere.svg" alt=""></a>
+            </div>
+            <div class="user_notifications">
+              <a href="#"><img src="assets/images/icons/settings.svg" alt=""></a>
+            </div>
+            <div class="user_profile_picture">
+              <a href="#"><img src="assets/images/user_profile_picture.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- side_bar_begin -->
+  <div id="mySidebar" class="sidebar">
+    <div class="side_logo">
+      <a href="#">
+        <img src="assets/images/logo.png" alt="">
+      </a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+    </div>
+    <div class="side_navs">
+      <a href="#" class="theme_btn Plus_btn ">Create RFQ</a>
+    </div>
+    <div class="side_link">
+      <a href="#">
+        <img src="assets/images/icons/roofing.svg" alt="">
+        <p>Home</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/dashboard.svg" alt="">
+        <p>Dashboard</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/person.svg" alt="">
+        <p>My Profile</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/search.svg" alt="">
+        <p>Find Forwarders</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/handshake.svg" alt="">
+        <p>Pro Resources</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/send.svg" alt="">
+        <p>RFQs Generated</p>
+      </a>
+      <a href="#">
+        <img style="width:10px;" src="assets/images/icons/attach_money.svg" alt="">
+        <p>PROPay</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/people.svg" alt="">
+        <p>Conference</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/local_activity.svg" alt="">
+        <p>Conference Bookings</p>
+      </a>
+    </div>
+    <div class="side_link">
+      <a href="#">
+        <img src="assets/images/icons/notifications.svg" alt="">
+        <p>Notifications</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/edit.svg" alt="">
+        <p>Edit Profile</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/beenhere.svg" alt="">
+        <p>Membership #125458</p>
+      </a>
+      <a href="#">
+        <img src="assets/images/icons/settings.svg" alt="">
+        <p>Settings</p>
+      </a>
+    </div>
+  </div>
+  <!-- side_bar_begin -->
+  
+	<!-- header-ends -->
+
+
+	<section class="dashboard_main  admin_dashboard_main">
+		<div class="container-fluid" style="padding: 0 50px;margin-top: 50px;">
+			<div class="row search-sidebar gx-5">
+				<div class="col-lg-4 col-12">
+					<div class="row">
+						<div class=" col-lg-12 col-12 dashboard-profile ct_dashboard_profile">
+							<h3>My Profile</h3>
+							<p class="view-as">Viewed as <a href="#">
+									<i class="fa fa-eye"></i>
+								</a>
+							</p>
+							<hr style="color: #ffff;margin: 20px 0;">
+							<div class="dash_main_user_profile_details">
+								<div class="user_main_bg_profile">
+									<img src="assets/images/user_main_bg_img.svg" alt="">
+									<div class="dash_main_user_profile_picture">
+										<h2>WM</h2>
+									</div>
+								</div>
+								<div class="dash_user_title">
+									<h2>Nucleus Logistics Ltd. <a href="#" class="theme_btn">Pro</a>
+									</h2>
+									<h5>
+										<a href="#">
+											<img src="assets/images/place.svg" alt="">
+										</a> Kuala Lumpur, Malaysia
+									</h5>
+									<p>Voluptua at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd no
+										sea takimata sanctus gubergren, no sea takimata sanctus est lorem ipsum no sea
+										takimata sanctus dolor sit amet.</p>
+									<p>Vero no sea takimata sanctus eos et accusam et justo duo dolores et ea rebum stet
+										clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+									<p>Accusam et justo duo dolores et ea rebum. Stet clita no sea takimata sanctus kasd
+										gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet more...</p>
+								</div>
+								<div class="User_profile_edit_btns">
+									<a href="" class="light_theme_btn">
+										<i class='bx bx-pencil'></i>Edit Profile </a>
+									<a href="" class="light_theme_btn">
+										<img src="assets/images/icons/gavel.svg" alt=""> PRO Resource </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 col-12 all-inquiries  ct_pro_points_main">
+							<div class="customer_inquery_main">
+								<div class="see-all-inquiries">
+									<h3>Pro Points</h3>
+									<p><img src="assets/images/monetization_on.svg" alt=""> Get more coins</p>
+								</div>
+								<ul class="nav nav-tabs inquiries-tab" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="profile-tab1" data-bs-toggle="tab"
+											data-bs-target="#profile1" type="button" role="tab" aria-controls="profile"
+											aria-selected="false">
+											<i class='bx bx-check-circle'></i>Reward </button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="home-tab1" data-bs-toggle="tab"
+											data-bs-target="#home1" type="button" role="tab" aria-controls="home"
+											aria-selected="true">History</button>
+									</li>
+								</ul>
+							</div>
+							<hr style="color: #ffff;margin: 20px 0;">
+							<div class="tab-content" id="myTabContent">
+								<div class="ct_coins_vh tab-pane fade show active" id="home1" role="tabpanel"
+									aria-labelledby="home-tab1">
+									<img src="assets/images/coins_redeem_frame.svg" style="margin:0 10px;width:89%;"
+										alt="">
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="ct_coins_vh  tab-pane fade" id="profile1" role="tabpanel"
+									aria-labelledby="profile-tab1">
+									<img src="assets/images/coins_redeem_frame.svg" style="margin:0 10px;width:89%;"
+										alt="">
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+									<div class="coins_box_main">
+										<div class="d-flex coins_title box">
+											<img src="assets/images/icons/coins-icon.svg" alt="">
+											<h2>Create New RFQ - <br> Earn 1k <span>Coins</span>
+											</h2>
+										</div>
+										<div class="create_btn_op">
+											<a href="">Rewarded</a>
+											<a href="">
+												<i class="bx bx-dots-vertical-rounded"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-12">
+					<div class="col-lg-12 ct_admin_res">
+						<div class=" all-inquiries ct_inquery_main ct_response_rate	">
+							<div class="see-all-inquiries">
+								<h3>Rating</h3>
+								<hr class="divider">
+							</div>
+							<div class="rating_main">
+								<div class="rating_box">
+									<h5>Responsiveness</h5>
+									<ul>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star-half'></i>
+										</li>
+										<li>
+											<i class='bx bx-star'></i>
+										</li>
+										<li>
+											<span>5.4</span>
+										</li>
+									</ul>
+								</div>
+								<div class="rating_box">
+									<h5>Query Management</h5>
+									<ul>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star-half'></i>
+										</li>
+										<li>
+											<i class='bx bx-star'></i>
+										</li>
+										<li>
+											<span>5.4</span>
+										</li>
+									</ul>
+								</div>
+								<div class="rating_box">
+									<h5>Services</h5>
+									<ul>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star-half'></i>
+										</li>
+										<li>
+											<i class='bx bx-star'></i>
+										</li>
+										<li>
+											<span>5.0</span>
+										</li>
+									</ul>
+								</div>
+								<div class="rating_box">
+									<h5>Rates</h5>
+									<ul>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star-half'></i>
+										</li>
+										<li>
+											<i class='bx bx-star'></i>
+										</li>
+										<li>
+											<span>4.0</span>
+										</li>
+									</ul>
+								</div>
+								<div class="rating_box">
+									<h5>Overall Rating</h5>
+									<ul>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star'></i>
+										</li>
+										<li>
+											<i class='bx bxs-star-half'></i>
+										</li>
+										<li>
+											<i class='bx bx-star'></i>
+										</li>
+										<li>
+											<span>5.4</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-md-around admin_dash_row">
+						<div class="col-lg-5 col-12 recent-search admin_dash_contact">
+							<div class="admin_cont_head d-flex justify-content-space-between">
+								<h3>Contacts</h3>
+								<a href="#" class="theme_btn">
+									<i class='bx bx-plus'></i>Add New </a>
+							</div>
+							<hr style="color: #ffff;margin: 0px 0 20px 0;">
+							<div class=" recent-search-form">
+								<div class="contct_list active_dark_mode">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/user01.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Jonathan Harder</h3>
+											<p>Overseas Manager</p>
+										</div>
+									</div>
+									<div class="users_inbox_detail">
+										<a href="#">
+											<img src="assets/images/place.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/email.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/icons/more_vert.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="contct_list">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/user01.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Jonathan Harder</h3>
+											<p>Overseas Manager</p>
+										</div>
+									</div>
+									<div class="users_inbox_detail">
+										<a href="#">
+											<img src="assets/images/place.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/email.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/icons/more_vert.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="contct_list  active_dark_mode">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/user01.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Jonathan Harder</h3>
+											<p>Overseas Manager</p>
+										</div>
+									</div>
+									<div class="users_inbox_detail">
+										<a href="#">
+											<img src="assets/images/place.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/email.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/icons/more_vert.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="contct_list">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/user01.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Jonathan Harder</h3>
+											<p>Overseas Manager</p>
+										</div>
+									</div>
+									<div class="users_inbox_detail">
+										<a href="#">
+											<img src="assets/images/place.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/email.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/icons/more_vert.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="contct_list active_dark_mode">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/user01.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Jonathan Harder</h3>
+											<p>Overseas Manager</p>
+										</div>
+									</div>
+									<div class="users_inbox_detail">
+										<a href="#">
+											<img src="assets/images/place.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/email.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="assets/images/icons/more_vert.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 col-12 all-inquiries admin_dash_affilate">
+							<div class="admin_cont_head d-flex justify-content-space-between">
+								<h3>Affiliations & Licenses</h3>
+								<a href="#" class="theme_btn">
+									<i class='bx bx-edit-alt'></i>Edit </a>
+							</div>
+							<hr style="color: #ffff;margin: 0px 0 20px 0;">
+							<div class=" recent-search-form">
+								<div class="contct_list active_dark_mode expire_mode">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/verified_user.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Certificate Of Inco</h3>
+											<p>30 Jan, 2023</p>
+										</div>
+									</div>
+									<div class="card_load_btns">
+										<a href="#" class="expire_card">
+											<i class='bx bx-error'></i>Expired </a>
+									</div>
+								</div>
+								<div class="contct_list">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/verified_user.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Registration Certificate</h3>
+											<p>30 Dec, 2025</p>
+										</div>
+									</div>
+									<div class="card_load_btns">
+										<a href="#" class="remain_card">
+											<i class='bx bx-check'></i>Active </a>
+									</div>
+								</div>
+								<div class="contct_list  active_dark_mode">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/workspace_premium.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Custom Broker</h3>
+											<p>30 Feb, 2025</p>
+										</div>
+									</div>
+									<div class="card_load_btns">
+										<a href="#" class="remain_card">
+											<i class='bx bx-check'></i>Active </a>
+									</div>
+								</div>
+								<div class="contct_list">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/verified_user.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>Nnlak</h3>
+											<p>30 Jun, 2025</p>
+										</div>
+									</div>
+									<div class="card_load_btns">
+										<a href="#" class="remain_card">
+											<i class='bx bx-check'></i>Active </a>
+									</div>
+								</div>
+								<div class="contct_list active_dark_mode">
+									<div class="users_pro_details">
+										<div class="user_contact_list_img">
+											<img src="assets/images/verified_user.svg" alt="">
+										</div>
+										<div class="users_contact_titles">
+											<h3>JCha</h3>
+											<p>30 May, 2025</p>
+										</div>
+									</div>
+									<div class="card_load_btns">
+										<a href="#" class="remain_card">
+											<i class='bx bx-check'></i>Active </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 col-12 admin_dash_service">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="admin_ser_cont">
+										<div class="admin_cont_head d-flex justify-content-space-between">
+											<h3>Freight & Service</h3>
+											<a href="#" class="theme_btn"><i class='bx bx-edit-alt'></i>Edit </a>
+										</div>
+										<hr style="color: #ffff;margin: 0px 0 20px 0;">
+										<div class="contct_list active_dark_mode">
+											<div class="users_pro_details">
+												<div class="user_contact_list_img">
+													<img src="assets/images/air_icons.svg" alt="">
+												</div>
+												<div class="users_contact_titles">
+													<h3>Air Freight</h3>
+													<p>250,000 shipments</p>
+												</div>
+											</div>
+											<div class="users_inbox_detail">
+												<h3>50%</h3>
+												<a href="#">
+													<img src="assets/images/email.svg" alt="">
+												</a>
+												<a href="#">
+													<img src="assets/images/icons/more_vert.svg" alt="">
+												</a>
+											</div>
+										</div>
+										<div class="contct_list ">
+											<div class="users_pro_details">
+												<div class="user_contact_list_img">
+													<img src="assets/images/air_icons.svg" alt="">
+												</div>
+												<div class="users_contact_titles">
+													<h3>Air Freight</h3>
+													<p>250,000 shipments</p>
+												</div>
+											</div>
+											<div class="users_inbox_detail">
+												<h3>50%</h3>
+												<a href="#">
+													<img src="assets/images/email.svg" alt="">
+												</a>
+												<a href="#">
+													<img src="assets/images/icons/more_vert.svg" alt="">
+												</a>
+											</div>
+										</div>
+										<div class="contct_list active_dark_mode">
+											<div class="users_pro_details">
+												<div class="user_contact_list_img">
+													<img src="assets/images/air_icons.svg" alt="">
+												</div>
+												<div class="users_contact_titles">
+													<h3>Air Freight</h3>
+													<p>250,000 shipments</p>
+												</div>
+											</div>
+											<div class="users_inbox_detail">
+												<h3>50%</h3>
+												<a href="#">
+													<img src="assets/images/email.svg" alt="">
+												</a>
+												<a href="#">
+													<img src="assets/images/icons/more_vert.svg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="admin_ser_cont admin_cont01">
+										<div class=" admin_cont_head d-flex justify-content-space-between">
+											<h3>Specialty Services</h3>
+											<a href="#" class="theme_btn"><i class='bx bx-edit-alt'></i>Edit </a>
+										</div>
+										<hr style="color: #ffff;margin: 0px 0 20px 0;">
+										<ul class="ser_tags">
+											<li>
+												<a href="#"><img src="assets/images/icons/local_activity.svg"
+														alt="">General cargo</a>
+											</li>
+											<li>
+												<a href="#"><img src="assets/images/icons/healing.svg" alt="">Pharma</a>
+											</li>
+											<li>
+												<a href="#"><img src="assets/images/icons/pets.svg" alt="">Live
+													Animals</a>
+											</li>
+											<li>
+												<a href="#"><img src="assets/images/icons/near_me.svg"
+														alt="">Relocations</a>
+											</li>
+											<li>
+												<a href="#"><img src="assets/images/icons/lunch_dining.svg"
+														alt="">Perishable</a>
+											</li>
+											<li>
+												<a href="#"><img src="assets/images/icons/computer.svg" alt="">Projects</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-6 admin_office_report">
+									<div class="admin_cont_head d-flex justify-content-space-between">
+										<h3>Offices</h3>
+										<a href="#" class="theme_btn"><i class="bx bx-plus"></i>Add New </a>
+									</div>
+									<hr style="color: #ffff;margin: 0px 0 20px 0;">
+									<div class="comp_result_detail">
+										<a href="#">Nucleus Logistics HO - 36111(Head Office) <h4>Pro</h4></a>
+										<h5><img src="assets/images/place.svg" alt=""> Kuala Lumpur, Malaysia</h5>
+										<h5><img src="assets/images/email.svg" alt=""> sameeerriazansari1995@gmail.com</h5>
+									</div>
+									<hr style="color: #ffff;margin: 0px 0 20px 0;">
+									<div class="comp_result_detail">
+										<a href="#">Nucleus Logistics HO - 36111(Branch) <h4>Pro</h4></a>
+										<h5><img src="assets/images/place.svg" alt=""> Kuala Lumpur, Malaysia</h5>
+										<h5><img src="assets/images/email.svg" alt=""> sameeerriazansari1995@gmail.com</h5>
+									</div>
+									<hr style="color: #ffff;margin: 0px 0 20px 0;">
+									<div class="comp_result_detail">
+										<a href="#">Nucleus Logistics HO - 36111(Branch) <h4>Pro</h4></a>
+										<h5><img src="assets/images/place.svg" alt=""> Kuala Lumpur, Malaysia</h5>
+										<h5><img src="assets/images/email.svg" alt=""> sameeerriazansari1995@gmail.com</h5>
+									</div>
+									<hr style="color: #ffff;margin: 0px 0 20px 0;">
+									<div class="comp_result_detail">
+										<a href="#">Nucleus Logistics HO - 36111(Branch) <h4>Pro</h4></a>
+										<h5><img src="assets/images/place.svg" alt=""> Kuala Lumpur, Malaysia</h5>
+										<h5><img src="assets/images/email.svg" alt=""> sameeerriazansari1995@gmail.com</h5>
+									</div>
+									<hr style="color: #ffff;margin: 0px 0 20px 0;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<button id="autoOpenModalBtn" style="display: none;" data-toggle="modal" data-target="#myModal"></button>
+
+	<!-- The Modal -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<section class="join_us">
+					<div class="row">
+						<div class="col-lg-4 col-md-5">
+							<div class="join_ban">
+								<img src="assets/images/users_icon.svg" alt="">
+								<h1>JOIN US<br>NOW!</h1>
+							</div>
+						</div>
+						<div class="col-lg-8 col-md-7">
+							<div class="detail_join_pop">
+								<h2>if you want to view more details<br>of this company, apply for <strong>Premium
+										membership.</strong></h2>
+								<div><img src="assets/images/email.svg" alt=""><input type="email" placeholder="Email"></div>
+								<div><i class='bx bx-user'></i><input type="name" placeholder="Full Name"></div>
+								<a href="#" class="theme_btn">Become a Premium Member<i
+										class='bx bx-right-arrow-alt'></i></a>
+								<p>By clicking "Become a premium member" I agree to Prolognet's</p>
+								<a href="#" class="single_line_btn">Terms and conditions.</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- footer begin -->
+	<?php include 'includes/footer.php'; ?>
+	<!-- footer end -->

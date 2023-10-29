@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Prolog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/dashboard.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<main class="app-container">
+		<header>
+			<div class="row">
+				<div class="col-lg-2 col-md-3 ">
+					<div class="head_logo d-flex">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="">
+						</a>
+						<div id="main">
+							<button class="openbtn" onclick="openNav()">☰</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-9 ct-d-none">
+					<div class="users_detail">
+						<h4>Who viewed<br> your profile</h4>
+						<div class="user_profile_picture">
+							<span><img src="assets/images/user01.svg" alt=""></span>
+							<span><img src="assets/images/user02.svg" alt=""></span>
+							<span><img src="assets/images/user03.svg" alt=""></span>
+							<span><img src="assets/images/user04.svg" alt=""></span>
+						</div>
+						<div class="user_views_quantity">
+							<h6>14</h6>
+							<p>This Week</p>
+						</div>
+						<div class="user_views_quantity">
+							<h6>572</h6>
+							<p>This Month</p>
+						</div>
+						<div class="user_quick_links">
+							<select>
+								<option>Quick Links</option>
+								<option>Demo 2</option>
+								<option>Demo 3</option>
+								<option>Demo 4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="profile_settings">
+						<div class="member_ship_card">
+							<p>Membership Expires on:</p>
+							<span>Feb 25, 2024</span>
+						</div>
+						<div class="user_profile_details">
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/notifications.svg" alt=""></a>
+							</div>
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/beenhere.svg" alt=""></a>
+							</div>
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/settings.svg" alt=""></a>
+							</div>
+							<div class="user_profile_picture">
+								<a href="#"><img src="assets/images/user_profile_picture.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- side_bar_begin -->
+		<div id="mySidebar" class="sidebar">
+			<div class="side_logo">
+				<a href="#">
+					<img src="assets/images/logo.png" alt="">
+				</a>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+			</div>
+			<div class="side_navs">
+				<a href="#" class="theme_btn Plus_btn ">Create RFQ</a>
+			</div>
+			<div class="side_link">
+				<a href="#">
+					<img src="assets/images/icons/roofing.svg" alt="">
+					<p>Home</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/dashboard.svg" alt="">
+					<p>Dashboard</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/person.svg" alt="">
+					<p>My Profile</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/search.svg" alt="">
+					<p>Find Forwarders</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/handshake.svg" alt="">
+					<p>Pro Resources</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/send.svg" alt="">
+					<p>RFQs Generated</p>
+				</a>
+				<a href="#">
+					<img style="width:10px;" src="assets/images/icons/attach_money.svg" alt="">
+					<p>PROPay</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/people.svg" alt="">
+					<p>Conference</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/local_activity.svg" alt="">
+					<p>Conference Bookings</p>
+				</a>
+			</div>
+			<div class="side_link">
+				<a href="#">
+					<img src="assets/images/icons/notifications.svg" alt="">
+					<p>Notifications</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/edit.svg" alt="">
+					<p>Edit Profile</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/beenhere.svg" alt="">
+					<p>Membership #125458</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/settings.svg" alt="">
+					<p>Settings</p>
+				</a>
+			</div>
+		</div>
+		<!-- side_bar_begin -->
+
+	<!-- header-ends -->
+	<main class="inner_page">
+		<section class="filter_sec">
+			<div class="container-fluid">
+				<div class="filter_title">
+					<h3>Filters</h3>
+					<a href="javascript:;" class="secondary_theme_btn">
+						<img src="assets/images/close.svg" alt=""> Clear Filters </a>
+				</div>
+				<hr class="divider">
+				<div class="filter_input">
+					<input type="text" placeholder="Country">
+					<input type="text" placeholder="City">
+					<select name="" id="">
+						<option value="">Services</option>
+						<option value="">Services</option>
+						<option value="">Services</option>
+						<option value="">Services</option>
+						<option value="">Services</option>
+					</select>
+					<input type="text" placeholder="Specialty">
+					<input type="text" placeholder="Agent">
+					<a href="javascript:;" class="theme_btn">
+						<i class='bx bx-search'></i>SEARCH </a>
+				</div>
+			</div>
+		</section>
+		<section class="shipmint_selection">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="ship_main">
+						<div class="ship_titile">
+							<p>26 results found for:</p>
+							<h2 class="title">Shipment</h2>
+						</div>
+						<hr class="divider">
+						<div class="ship_check_box">
+							<h4>Office Type</h4>
+							<label class="ct_label_container">Head Office <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<label class="ct_label_container">Branch <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<hr class="divider">
+						<div class="ship_check_box">
+							<h4>Membership Type</h4>
+							<label class="ct_label_container">PRO <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<label class="ct_label_container">Pro Pay <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<hr class="divider">
+						<div class="ship_check_box ship_ct_grid_box">
+							<h4>Services</h4>
+							<span></span>
+							<label class="ct_label_container">Air <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<label class="ct_label_container">Ocean <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<label class="ct_label_container">Trucking <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<hr class="divider">
+						<div class="ship_check_box ship_ct_grid_box">
+							<h4>Speciality</h4>
+							<span></span>
+							<label class="ct_label_container">Projects <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<label class="ct_label_container">Pharma <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<label class="ct_label_container">Courier <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<label class="ct_label_container">E-Commerce <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<label class="ct_label_container">Dengruous Goods <input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="ship_result_main">
+						<div class="filter_title">
+							<h3>Results (80)</h3>
+							<ul>
+								<li><a href="#"><i class='bx bx-chevron-left'></i>previous </a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a> </li>
+								<li><a href="#">5</a></li>
+								<li><a href="">Next <i class='bx bx-chevron-right'></i> </a></li>
+							</ul>
+						</div>
+						<hr class="divider">
+						<div class="result_list">
+							<div class="accordion">
+								<div class="quest-section  active_dark_mode">
+									<div class="comp_result_main_list">
+										<div class="comp_result_logo_img"><img src="assets/images/logo01.svg" alt=""></div>
+										<div class="comp_result_detail">
+											<a class="quest-title active1 " href="#accordion-1">PROLOG Shipping & Logistics
+												Ltd <h4>Pro</h4></a>
+											<h5><i class="fa fa-map-marker"></i> Kuala Lumpur, Malaysia</h5>
+										</div>
+									</div>
+									<div id="accordion-1" class="quest-content">
+										<div class="go_to_profile_btn">
+											<a href="#" class="theme_btn">Go To The Profile <i class='bx bx-right-arrow-alt'></i></a>
+										</div>
+										<p>Voluptua at vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+											kasd no sea takimata sanctus
+											gubergren, no sea takimata sanctus est lorem ipsum no sea takimata sanctus
+											dolor sit amet Vero no sea
+											takimata sanctus eos et accusam et justo duo dolores et ea rebum stet clita
+											kasd gubergren,
+											no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+										<div class="result_points_main">
+											<div class="win-point"><img src="assets/images/winner_img.svg" alt=""></div>
+											<div class="others_com_badge">
+												<img src="assets/images/badge01.svg" alt="">
+												<img src="assets/images/badge02.svg" alt="">
+												<img src="assets/images/badge03.svg" alt="">
+												<img src="assets/images/badge04.svg" alt="">
+												<img src="assets/images/badge05.svg" alt="">
+												<h3>3+more</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="quest-section">
+									<div class="comp_result_main_list">
+										<div class="comp_result_logo_img"><img src="assets/images/logo02.svg" alt=""></div>
+										<div class="comp_result_detail">
+											<a class="quest-title" href="#accordion-2">PROLOG Shipping & Logistics Ltd <h4>
+													pro</h4></a>
+											<h5><i class="fa fa-map-marker"></i> Kuala Lumpur, Malaysia</h5>
+										</div>
+									</div>
+									<div id="accordion-2" class="quest-content">
+										<div class="go_to_profile_btn">
+											<a href="#" class="theme_btn">Go To The Profile <i class='bx bx-right-arrow-alt'></i></a>
+										</div>
+										<p>Voluptua at vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+											kasd no sea takimata sanctus
+											gubergren, no sea takimata sanctus est lorem ipsum no sea takimata sanctus
+											dolor sit amet Vero no sea
+											takimata sanctus eos et accusam et justo duo dolores et ea rebum stet clita
+											kasd gubergren,
+											no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+										<div class="result_points_main">
+											<div class="win-point"><img src="assets/images/winner_img.svg" alt=""></div>
+											<div class="others_com_badge">
+												<img src="assets/images/badge01.svg" alt="">
+												<img src="assets/images/badge02.svg" alt="">
+												<img src="assets/images/badge03.svg" alt="">
+												<img src="assets/images/badge04.svg" alt="">
+												<img src="assets/images/badge05.svg" alt="">
+												<h3>3+more</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="quest-section  active_dark_mode">
+									<div class="comp_result_main_list">
+										<div class="comp_result_logo_img"><img src="assets/images/logo01.svg" alt=""></div>
+										 <div class="comp_result_detail">
+											<a class="quest-title  " href="#accordion-3">PROLOG Shipping & Logistics Ltd<h4>Pro</h4></a>
+											<h5><i class="fa fa-map-marker"></i> Kuala Lumpur, Malaysia</h5>
+										</div>
+									</div>
+									<div id="accordion-3" class="quest-content">
+										<div class="go_to_profile_btn">
+											<a href="#" class="theme_btn">Go To The Profile <i class='bx bx-right-arrow-alt'></i></a>
+										</div>
+										<p>Voluptua at vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+											kasd no sea takimata sanctus
+											gubergren, no sea takimata sanctus est lorem ipsum no sea takimata sanctus
+											dolor sit amet Vero no sea
+											takimata sanctus eos et accusam et justo duo dolores et ea rebum stet clita
+											kasd gubergren,
+											no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+										<div class="result_points_main">
+											<div class="win-point"><img src="assets/images/winner_img.svg" alt=""></div>
+											<div class="others_com_badge">
+												<img src="assets/images/badge01.svg" alt="">
+												<img src="assets/images/badge02.svg" alt="">
+												<img src="assets/images/badge03.svg" alt="">
+												<img src="assets/images/badge04.svg" alt="">
+												<img src="assets/images/badge05.svg" alt="">
+												<h3>3+more</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="quest-section">
+									<div class="comp_result_main_list">
+										<div class="comp_result_logo_img"><img src="assets/images/logo02.svg" alt=""></div>
+										<div class="comp_result_detail">
+											<a class="quest-title" href="#accordion-4">PROLOG Shipping & Logistics Ltd <h4>
+													Pro</h4></a>
+											<h5><i class="fa fa-map-marker"></i> Kuala Lumpur, Malaysia</h5>
+										</div>
+									</div>
+									<div id="accordion-4" class="quest-content">
+										<div class="go_to_profile_btn">
+											<a href="#" class="theme_btn">Go To The Profile <i class='bx bx-right-arrow-alt'></i></a>
+										</div>
+										<p>Voluptua at vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+											kasd no sea takimata sanctus
+											gubergren, no sea takimata sanctus est lorem ipsum no sea takimata sanctus
+											dolor sit amet Vero no sea
+											takimata sanctus eos et accusam et justo duo dolores et ea rebum stet clita
+											kasd gubergren,
+											no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+										<div class="result_points_main">
+											<div class="win-point"><img src="assets/images/winner_img.svg" alt=""></div>
+											<div class="others_com_badge">
+												<img src="assets/images/badge01.svg" alt="">
+												<img src="assets/images/badge02.svg" alt="">
+												<img src="assets/images/badge03.svg" alt="">
+												<img src="assets/images/badge04.svg" alt="">
+												<img src="assets/images/badge05.svg" alt="">
+												<h3>3+more</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="quest-section active_dark_mode">
+									<div class="comp_result_main_list">
+										<div class="comp_result_logo_img"><img src="assets/images/logo01.svg" alt=""></div>
+										<div class="comp_result_detail">
+											<a class="quest-title" href="#accordion-5">PROLOG Shipping & Logistics Ltd <h4>
+													pro</h4></a>
+											<h5><i class="fa fa-map-marker"></i> Kuala Lumpur, Malaysia</h5>
+										</div>
+									</div>
+									<div id="accordion-5" class="quest-content">
+										<div class="go_to_profile_btn">
+											<a href="#" class="theme_btn">Go To The Profile<i class='bx bx-right-arrow-alt'></i></a>
+										</div>
+										<p>Voluptua at vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+											kasd no sea takimata sanctus
+											gubergren, no sea takimata sanctus est lorem ipsum no sea takimata sanctus
+											dolor sit amet Vero no sea
+											takimata sanctus eos et accusam et justo duo dolores et ea rebum stet clita
+											kasd gubergren,
+											no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+										<div class="result_points_main">
+											<div class="win-point"><img src="assets/images/winner_img.svg" alt=""></div>
+											<div class="others_com_badge">
+												<img src="assets/images/badge01.svg" alt="">
+												<img src="assets/images/badge02.svg" alt="">
+												<img src="assets/images/badge03.svg" alt="">
+												<img src="assets/images/badge04.svg" alt="">
+												<img src="assets/images/badge05.svg" alt="">
+												<h3>3+more</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+</main>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/slick.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script> 
+<script type="text/javascript" src="assets/js/wow.js"></script> 
+<script type="text/javascript" src="assets/js/functions.js"></script> 
+
+<script>
+  // Function to open the modal when the page loads
+  $(document).ready(function() {
+    $('#autoOpenModalBtn').trigger('click');
+  });
+</script>
+
+</body>
+</html>

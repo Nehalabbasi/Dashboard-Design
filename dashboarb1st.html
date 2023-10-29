@@ -1,0 +1,555 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Prolog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/dashboard.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<main class="app-container">
+		<header>
+			<div class="row">
+				<div class="col-lg-2 col-md-3 ">
+					<div class="head_logo d-flex">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="">
+						</a>
+						<div id="main">
+							<button class="openbtn" onclick="openNav()">☰</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-9 ct-d-none">
+					<div class="users_detail">
+						<h4>Who viewed<br> your profile</h4>
+						<div class="user_profile_picture">
+							<span><img src="assets/images/user01.svg" alt=""></span>
+							<span><img src="assets/images/user02.svg" alt=""></span>
+							<span><img src="assets/images/user03.svg" alt=""></span>
+							<span><img src="assets/images/user04.svg" alt=""></span>
+						</div>
+						<div class="user_views_quantity">
+							<h6>14</h6>
+							<p>This Week</p>
+						</div>
+						<div class="user_views_quantity">
+							<h6>572</h6>
+							<p>This Month</p>
+						</div>
+						<div class="user_quick_links">
+							<select>
+								<option>Quick Links</option>
+								<option>Demo 2</option>
+								<option>Demo 3</option>
+								<option>Demo 4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="profile_settings">
+						<div class="member_ship_card">
+							<p>Membership Expires on:</p>
+							<span>Feb 25, 2024</span>
+						</div>
+						<div class="user_profile_details">
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/notifications.svg" alt=""></a>
+							</div>
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/beenhere.svg" alt=""></a>
+							</div>
+							<div class="user_notifications">
+								<a href="#"><img src="assets/images/icons/settings.svg" alt=""></a>
+							</div>
+							<div class="user_profile_picture">
+								<a href="#"><img src="assets/images/user_profile_picture.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- side_bar_begin -->
+		<div id="mySidebar" class="sidebar">
+			<div class="side_logo">
+				<a href="#">
+					<img src="assets/images/logo.png" alt="">
+				</a>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+			</div>
+			<div class="side_navs">
+				<a href="#" class="theme_btn Plus_btn ">Create RFQ</a>
+			</div>
+			<div class="side_link">
+				<a href="#">
+					<img src="assets/images/icons/roofing.svg" alt="">
+					<p>Home</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/dashboard.svg" alt="">
+					<p>Dashboard</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/person.svg" alt="">
+					<p>My Profile</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/search.svg" alt="">
+					<p>Find Forwarders</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/handshake.svg" alt="">
+					<p>Pro Resources</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/send.svg" alt="">
+					<p>RFQs Generated</p>
+				</a>
+				<a href="#">
+					<img style="width:10px;" src="assets/images/icons/attach_money.svg" alt="">
+					<p>PROPay</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/people.svg" alt="">
+					<p>Conference</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/local_activity.svg" alt="">
+					<p>Conference Bookings</p>
+				</a>
+			</div>
+			<div class="side_link">
+				<a href="#">
+					<img src="assets/images/icons/notifications.svg" alt="">
+					<p>Notifications</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/edit.svg" alt="">
+					<p>Edit Profile</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/beenhere.svg" alt="">
+					<p>Membership #125458</p>
+				</a>
+				<a href="#">
+					<img src="assets/images/icons/settings.svg" alt="">
+					<p>Settings</p>
+				</a>
+			</div>
+		</div>
+		<!-- side_bar_begin -->
+
+
+<section class="dashboard_main" >
+<div class="container-fluid" style="padding: 0 50px;margin-top: 50px;">
+  <div class="row search-sidebar gx-5">
+    <div class="col-lg-4 col-12">
+      <div class="row">
+        <div class=" col-lg-12 col-12 dashboard-profile ct_dashboard_profile">
+          <h3>My Profile</h3>
+          <p class="view-as">Viewed as <a href="#"><img src="assets/images/visibility.svg" alt=""></a></p>
+           <hr style="color: #ffff;margin: 20px 0;">
+           <div class="dash_main_user_profile_details">
+            <div class="user_main_bg_profile">
+              <img src="assets/images/user_main_bg_img.svg" alt="">
+               <div class="dash_main_user_profile_picture">
+                <h2>WM</h2>
+              </div>
+           </div>
+            <div class="dash_user_title">
+              <h2>Nucleus Logistics Ltd. <a href="#" class="theme_btn">Pro</a> </h2>
+              <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+              <p>Voluptua at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                 gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet more...</p>
+            </div>
+            <div class="User_profile_edit_btns">
+              <a href="" class="light_theme_btn"><i class='bx bx-pencil'></i>Edit Profile</a>
+              <a href="" class="light_theme_btn"><img src="assets/images/icons/gavel.svg" alt=""> PRO Resource</a>
+            </div>
+            </div>
+          </div>
+        <div class="col-lg-12 col-12 all-inquiries  ct_pro_points_main">
+          <div class="customer_inquery_main">
+          <div class="see-all-inquiries">
+            <h3>Pro Points</h3>
+            <p><img src="assets/images/monetization_on.svg" alt=""> Get more coins</p>
+          </div>
+          <ul class="nav nav-tabs inquiries-tab" id="myTab" role="tablist">
+           <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab1" data-bs-toggle="tab" data-bs-target="#profile1" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class='bx bx-check-circle' ></i>Reward</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab1" data-bs-toggle="tab" data-bs-target="#home1" type="button" role="tab" aria-controls="home" aria-selected="true">History</button>
+            </li>
+          </ul>
+          </div>
+          <hr style="color: #ffff;margin: 20px 0;">
+          <div class="tab-content" id="myTabContent">
+            <div class="ct_coins_vh tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab1">
+              <div class="coins_box_main">
+                <div class="d-flex coins_title box">
+                    <img src="assets/images/icons/coins-icon.svg" alt="">
+                    <h2>Create New RFQ -<br> Earn 1k <span>Coins</span></h2>
+                </div>
+                  <a href="#" class="theme_btn">Create</a>
+                  <a href="#" class="coins_options_dots"><i class='bx bx-dots-vertical-rounded' ></i></a>
+              </div>
+              <div class="coins_box_main">
+                <div class="d-flex coins_title box">
+                    <img src="assets/images/icons/coins-icon.svg" alt="">
+                    <h2>Create New RFQ -<br> Earn 1k <span>Coins</span></h2>
+                </div>
+                  <a href="#" class="theme_btn">Create</a>
+                  <a href="#" class="coins_options_dots"><i class='bx bx-dots-vertical-rounded' ></i></a>
+              </div>
+              <div class="coins_box_main">
+                <div class="d-flex coins_title box">
+                    <img src="assets/images/icons/coins-icon.svg" alt="">
+                    <h2>Create New RFQ -<br> Earn 1k <span>Coins</span></h2>
+                </div>
+                  <a href="#" class="theme_btn">Create</a>
+                  <a href="#" class="coins_options_dots"><i class='bx bx-dots-vertical-rounded' ></i></a>
+              </div>
+              <div class="coins_box_main">
+                <div class="d-flex coins_title box">
+                    <img src="assets/images/icons/coins-icon.svg" alt="">
+                    <h2>Create New RFQ -<br> Earn 1k <span>Coins</span></h2>
+                </div>
+                  <a href="#" class="theme_btn">Create</a>
+                  <a href="#" class="coins_options_dots"><i class='bx bx-dots-vertical-rounded' ></i></a>
+              </div>
+            </div>
+            <div class="ct_coins_vh  tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab1">
+            <div class="coins_box_main">
+                <div class="d-flex coins_title box">
+                    <img src="assets/images/icons/coins-icon.svg" alt="">
+                    <h2>Create New RFQ -<br> Earn 1k <span>Coins</span></h2>
+                </div>
+                  <a href="#" class="theme_btn">Create</a>
+                  <a href="#" class="coins_options_dots"><i class='bx bx-dots-vertical-rounded' ></i></a>
+              </div>
+              <div class="coins_box_main">
+                <div class="d-flex coins_title box">
+                    <img src="assets/images/icons/coins-icon.svg" alt="">
+                    <h2>Create New RFQ -<br> Earn 1k <span>Coins</span></h2>
+                </div>
+                  <a href="#" class="theme_btn">Create</a>
+                  <a href="#" class="coins_options_dots"><i class='bx bx-dots-vertical-rounded' ></i></a>
+              </div>
+              <div class="coins_box_main">
+                <div class="d-flex coins_title box">
+                    <img src="assets/images/icons/coins-icon.svg" alt="">
+                    <h2>Create New RFQ -<br> Earn 1k <span>Coins</span></h2>
+                </div>
+                  <a href="#" class="theme_btn">Create</a>
+                  <a href="#" class="coins_options_dots"><i class='bx bx-dots-vertical-rounded' ></i></a>
+              </div>
+              <div class="coins_box_main">
+                <div class="d-flex coins_title box">
+                    <img src="assets/images/icons/coins-icon.svg" alt="">
+                    <h2>Create New RFQ -<br> Earn 1k <span>Coins</span></h2>
+                </div>
+                  <a href="#" class="theme_btn">Create</a>
+                  <a href="#" class="coins_options_dots"><i class='bx bx-dots-vertical-rounded' ></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="col-lg-8 col-12">
+      <div class="row justify-content-md-around">
+        <div class="col-lg-5 col-12 recent-search">
+          <h3>My Recent Search</h3>
+          <p><img src="assets/images/support_agent.svg" alt="">Need a new agent? Search now!</p>
+          <hr style="color: #ffff;margin: 20px 0;">
+          <form class="signup-form">
+            <div class="row recent-search-form">
+              <div class="col-lg-6 col-12 ">
+                <select type="text" placeholder="Country">
+                  <option value="Country">Country</option>
+                  <option value="Country">France</option>
+                  <option value="Country">France</option>
+                  <option value="Country">France</option>
+                </select>
+              </div>
+              <div class="col-lg-6 col-12">
+                <input type="text" placeholder="City">
+              </div>
+              <div class="col-lg-6 col-12">
+                <input type="text" placeholder="Service">
+              </div>
+              <div class="col-lg-6 col-12">
+                <input type="text" placeholder="Specialty">
+              </div>
+              <div class="col-lg-6 col-12">
+                <input type="text" placeholder="Company Name">
+              </div>
+              <div class="col-lg-6 col-12">
+                <input type="text" placeholder="Member ID">
+              </div>
+              <div class="col-lg-12 col-12 search-icon">
+              <i class='bx bx-search' ></i>
+                <input type="submit" placeholder="search" value="Search">
+              </div>
+            </div>
+          </form>
+          <div class="last-search">
+           <div class="title_last_search">
+            <p>Your last searches</p>
+            <a href="#">See All</a>
+            </div>
+            <ul>
+              <li>#newyork</li>
+              <li>#usa</li>
+              <li>#malaysia</li>
+              <li>#indonasia</li>
+              <li>#china</li>
+              <li>#india</li>
+              <li>#japan</li>
+              <li>#pakistan</li>
+              <li>#russia</li>
+              <li>#iran</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 col-12 all-inquiries ct_inquery_main">
+          <div class="customer_inquery_main">
+          <div class="see-all-inquiries">
+            <h3>My Inquiries</h3>
+            <p><img src="assets/images/checklist.svg" alt=""> All Inquiries</p>
+          </div>
+          <ul class="nav nav-tabs inquiries-tab" id="myTab" role="tablist">
+           <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class='bx bx-check-circle' ></i>Recieved</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Sent</button>
+            </li>
+          </ul>
+          </div>
+          <hr style="color: #ffff;margin: 20px 0;">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="sent-data active_dark_mode">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/receipt.svg" alt=""></a>0</h5>
+                </div>
+              </div>
+              <div class="sent-data">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/done_all.svg" alt=""></a>5</h5>
+                </div>
+              </div>
+              <div class="sent-data active_dark_mode">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/receipt.svg" alt=""></a>0</h5>
+                </div>
+              </div>
+              <div class="sent-data">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/done_all.svg" alt=""></a>5</h5>
+                </div>
+              </div>
+              <div class="sent-data active_dark_mode">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/receipt.svg" alt=""></a>0</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+             <div class="sent-data active_dark_mode">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/receipt.svg" alt=""></a>0</h5>
+                </div>
+              </div>
+              <div class="sent-data">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/done_all.svg" alt=""></a>5</h5>
+                </div>
+              </div>
+              <div class="sent-data active_dark_mode">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/receipt.svg" alt=""></a>0</h5>
+                </div>
+              </div>
+              <div class="sent-data">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/done_all.svg" alt=""></a>5</h5>
+                </div>
+              </div>
+              <div class="sent-data active_dark_mode">
+                <div class="inquery_country_details_box">
+                  <h6>Looking for an Agent in Indonasia</h6>  
+                  <h5> <a href="#"><img src="assets/images/place.svg" alt=""></a> Kuala Lumpur, Malaysia</h5>
+                </div>
+                <div class="inquery_country_details_box2">
+                  <p>2021-07-02</p>
+                  <h5> <a href="#"><img src="assets/images/icons/receipt.svg" alt=""></a>5</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-12 all-inquiries quotes query_qoutes_main">
+          <div class="see-all-inquiries quations_queries">
+            <h3>Request for Quotations (RFQ's)</h3>
+            <a href="#">See All</a>
+          </div>
+          <div class="table-responsive-sm">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>TYPE OF INQUIRY</th>
+                  <th>ORIGIN</th>
+                  <th>DESTINATION</th>
+                  <th>MODE</th>
+                  <th>FLOATED ON</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active_dark_mode">
+                  <td>1</td>
+                  <td>Need an agent in East Africa</td>
+                  <td>Kenya</td>
+                  <td>Canada</td>
+                  <td>Air</td>
+                  <td>5th Jul, 2021</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2 x 20 Shoes</td>
+                  <td>Schenzan</td>
+                  <td>Bulgaria</td>
+                  <td>Sea</td>
+                  <td>3rd Jul, 2021</td>
+                </tr>
+                <tr class="active_dark_mode">
+                  <td>3</td>
+                  <td> Need an agent in East Africa</td>
+                  <td>Kenya</td>
+                  <td>Canada</td>
+                  <td>Air</td>
+                  <td>5th Jul, 2021</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2 x 20 Shoes</td>
+                  <td>Schenzan</td>
+                  <td>Bulgaria</td>
+                  <td>Sea</td>
+                  <td>3rd Jul, 2021</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<button id="autoOpenModalBtn" style="display: none;" data-toggle="modal" data-target="#myModal"></button>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+       <section class="join_us">
+         <div class="row">
+           <div class="col-lg-4 col-md-5">
+              <div class="join_ban">
+                  <img src="assets/images/users_icon.svg" alt="">
+                  <h1>JOIN US<br>NOW!</h1>
+              </div>
+           </div>
+           <div class="col-lg-8 col-md-7">
+              <div class="detail_join_pop">
+                <h2>if you want to view more details<br>of this company, apply for <strong>Premium membership.</strong></h2>
+                <div><i class='bx bx-envelope' ></i><input type="email" placeholder="Email"></div>
+                <div><i class='bx bx-user' ></i><input type="name" placeholder="Full Name"></div>
+                <a href="#" class="theme_btn">Become a Premium Member<i class='bx bx-right-arrow-alt' ></i></a>
+                <p>By clicking "Become a premium member" I agree to Prolognet's</p>
+                <a href="#" class="single_line_btn">Terms and conditions.</a>
+             </div>
+           </div>
+         </div>
+       </section>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/slick.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script> 
+<script type="text/javascript" src="assets/js/wow.js"></script> 
+<script type="text/javascript" src="assets/js/functions.js"></script> 
+
+<script>
+  // Function to open the modal when the page loads
+  $(document).ready(function() {
+    $('#autoOpenModalBtn').trigger('click');
+  });
+</script>
+
+</body>
+</html>
